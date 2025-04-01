@@ -58,6 +58,7 @@
     "@types/node": "22.9.1",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
+    "critters": "^0.0.20",
     "eslint": "8.57.0",
     "eslint-config-next": "14.2.5",
     "postcss": "8.4.49",
@@ -67,11 +68,12 @@
   },
   "scripts": {
     "build": "next build",
-    "check": "rm -rf .next .open-next && opennextjs-cloudflare && tsc && wrangler deploy --dry-run",
-    "deploy": "rm -rf .next .open-next && opennextjs-cloudflare && wrangler deploy",
+    "clean": "rm -rf .next .open-next node_modules/.cache",
+    "check": "npm run clean && opennextjs-cloudflare && tsc && wrangler deploy --dry-run",
+    "deploy": "npm run clean && opennextjs-cloudflare && wrangler deploy",
     "dev": "next dev",
     "lint": "next lint",
-    "preview": "rm -rf .next .open-next && opennextjs-cloudflare && wrangler dev",
+    "preview": "npm run clean && opennextjs-cloudflare && wrangler dev",
     "start": "next start",
     "types": "wrangler types --env-interface CloudflareEnv env.d.ts"
   }
