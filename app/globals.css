@@ -1,0 +1,349 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+@layer base {
+    :root {
+        /* spanishOrange */
+        --spanish-orange-700: hsl(27, 85%, 84%);
+        --spanish-orange-800: hsl(27, 86%, 80%);
+        --spanish-orange-900: hsl(27, 87%, 74%);
+        --spanish-orange-1000: hsl(27, 94%, 50%);
+        --spanish-orange-1100: hsl(27, 91%, 55%);
+        --spanish-orange-1200: hsl(27, 90%, 45%);
+        --spanish-orange-1300: hsl(27, 89%, 35%);
+        --spanish-orange-1400: hsl(27, 89%, 20%);
+
+        /* blackenedBlue */
+        --blackened-blue-500: hsl(192, 4%, 58%);
+        --blackened-blue-600: hsl(196, 4%, 52%);
+        --blackened-blue-700: hsl(200, 4%, 41%);
+        --blackened-blue-800: hsl(205, 5%, 32%);
+        --blackened-blue-900: hsl(210, 6%, 24%);
+        --blackened-blue-1000: hsl(210, 13%, 16%);
+
+        /* snowWhite */
+        --snow-white-400: hsl(0, 0%, 96%);
+        --snow-white-500: hsl(0, 4%, 92%);
+        --snow-white-600: hsl(210, 4%, 82%);
+        --snow-white-700: hsl(210, 4%, 74%);
+        --snow-white-800: hsl(210, 4%, 66%);
+        --snow-white-900: hsl(192, 4%, 58%);
+        --snow-white-1000: hsl(0, 0%, 100%);
+
+        /* orange */
+        --orange-600: hsl(27, 86%, 86%);
+        --orange-700: hsl(27, 86%, 80%);
+        --orange-800: hsl(27, 87%, 74%);
+        --orange-900: hsl(27, 87%, 70%);
+        --orange-1000: hsl(27, 94%, 50%);
+        --orange-1100: hsl(27, 90%, 40%);
+        --orange-1200: hsl(27, 91%, 30%);
+        --orange-1300: hsl(27, 89%, 20%);
+        --orange-1400: hsl(27, 90%, 10%);
+
+        /* blueGreen */
+        --blue-green-600: hsl(191, 23%, 82%);
+        --blue-green-700: hsl(191, 35%, 71%);
+        --blue-green-800: hsl(191, 47%, 57%);
+        --blue-green-900: hsl(191, 60%, 43%);
+        --blue-green-1000: hsl(191, 79%, 29%);
+        --blue-green-1100: hsl(191, 79%, 22%);
+        --blue-green-1200: hsl(191, 81%, 17%);
+        --blue-green-1300: hsl(191, 78%, 11%);
+        --blue-green-1400: hsl(191, 78%, 6%);
+
+        /* yellowBanana */
+        --yellow-banana-600: hsl(54, 100%, 91%);
+        --yellow-banana-700: hsl(54, 100%, 86%);
+        --yellow-banana-800: hsl(54, 100%, 77%);
+        --yellow-banana-900: hsl(54, 100%, 71%);
+        --yellow-banana-1000: hsl(54, 100%, 63%);
+        --yellow-banana-1100: hsl(54, 80%, 45%);
+        --yellow-banana-1200: hsl(54, 73%, 35%);
+        --yellow-banana-1300: hsl(54, 76%, 23%);
+        --yellow-banana-1400: hsl(54, 75%, 12%);
+
+        /* gray */
+        --gray-000: hsl(0, 0%, 100%);
+        --gray-600: hsl(0, 0%, 99%);
+        --gray-700: hsl(0, 0%, 83%);
+        --gray-800: hsl(0, 0%, 48%);
+        --gray-900: hsl(0, 0%, 31%);
+        --gray-1000: hsl(0, 0%, 14%);
+        --gray-1100: hsl(0, 0%, 11%);
+        --gray-1200: hsl(0, 0%, 12%);
+
+        /* grayBlue */
+        --gray-blue-600: hsl(220, 17%, 96%);
+        --gray-blue-700: hsl(220, 15%, 93%);
+        --gray-blue-800: hsl(220, 13%, 90%);
+        --gray-blue-900: hsl(220, 11%, 86%);
+        --gray-blue-1000: hsl(220, 9%, 80%);
+        --gray-blue-1100: hsl(210, 14%, 67%);
+        --gray-blue-1200: hsl(210, 3%, 50%);
+        --gray-blue-1300: hsl(210, 3%, 33%);
+        --gray-blue-1400: hsl(210, 3%, 17%);
+
+        /* solarGold */
+        --solar-gold-600: hsl(53, 63%, 83%);
+        --solar-gold-700: hsl(53, 63%, 75%);
+        --solar-gold-800: hsl(53, 63%, 67%);
+        --solar-gold-900: hsl(53, 83%, 61%);
+        --solar-gold-1000: hsl(53, 100%, 43%);
+        --solar-gold-1100: hsl(53, 100%, 39%);
+        --solar-gold-1200: hsl(53, 100%, 30%);
+        --solar-gold-1300: hsl(53, 100%, 21%);
+        --solar-gold-1400: hsl(53, 100%, 13%);
+
+        /* telemagenta */
+        --telemagenta-600: hsl(335, 67%, 84%);
+        --telemagenta-700: hsl(335, 67%, 75%);
+        --telemagenta-800: hsl(335, 67%, 66%);
+        --telemagenta-900: hsl(335, 67%, 56%);
+        --telemagenta-1000: hsl(335, 67%, 50%);
+        --telemagenta-1100: hsl(335, 67%, 47%);
+        --telemagenta-1200: hsl(335, 67%, 34%);
+        --telemagenta-1300: hsl(335, 67%, 25%);
+        --telemagenta-1400: hsl(335, 67%, 16%);
+
+        /* skylineBlue */
+        --skyline-blue-600: hsl(223, 67%, 84%);
+        --skyline-blue-700: hsl(223, 67%, 76%);
+        --skyline-blue-800: hsl(223, 67%, 70%);
+        --skyline-blue-900: hsl(223, 67%, 62%);
+        --skyline-blue-1000: hsl(223, 67%, 59%);
+        --skyline-blue-1100: hsl(223, 67%, 53%);
+        --skyline-blue-1200: hsl(223, 40%, 43%);
+        --skyline-blue-1300: hsl(223, 40%, 32%);
+        --skyline-blue-1400: hsl(223, 40%, 14%);
+
+        /* citricGreen */
+        --citric-green-600: hsl(98, 38%, 81%);
+        --citric-green-700: hsl(98, 38%, 70%);
+        --citric-green-800: hsl(98, 38%, 59%);
+        --citric-green-900: hsl(98, 38%, 49%);
+        --citric-green-1000: hsl(98, 83%, 36%);
+        --citric-green-1100: hsl(98, 83%, 33%);
+        --citric-green-1200: hsl(98, 83%, 25%);
+        --citric-green-1300: hsl(98, 83%, 18%);
+        --citric-green-1400: hsl(98, 83%, 18%);
+
+        /* crimsonBlaze */
+        --crimson-blaze-600: hsl(358, 100%, 91%);
+        --crimson-blaze-700: hsl(358, 100%, 86%);
+        --crimson-blaze-800: hsl(358, 100%, 77%);
+        --crimson-blaze-900: hsl(358, 100%, 71%);
+        --crimson-blaze-1000: hsl(358, 100%, 63%);
+        --crimson-blaze-1100: hsl(358, 67%, 45%);
+        --crimson-blaze-1200: hsl(358, 67%, 34%);
+        --crimson-blaze-1300: hsl(358, 67%, 25%);
+        --crimson-blaze-1400: hsl(358, 67%, 16%);
+
+        /* secondary info */
+        --secondary-info-600: hsl(210, 40%, 89%);
+        --secondary-info-700: hsl(210, 40%, 80%);
+        --secondary-info-800: hsl(210, 40%, 70%);
+        --secondary-info-900: hsl(210, 60%, 42%);
+        --secondary-info-1000: hsl(210, 60%, 42%);
+        --secondary-info-1100: hsl(210, 60%, 34%);
+        --secondary-info-1200: hsl(210, 60%, 25%);
+        --secondary-info-1300: hsl(210, 60%, 17%);
+        --secondary-info-1400: hsl(210, 60%, 10%);
+
+        /* secondary warning */
+        --secondary-warning-600: hsl(54, 80%, 89%);
+        --secondary-warning-700: hsl(54, 80%, 80%);
+        --secondary-warning-800: hsl(54, 80%, 70%);
+        --secondary-warning-900: hsl(54, 80%, 60%);
+        --secondary-warning-1000: hsl(54, 100%, 50%);
+        --secondary-warning-1100: hsl(54, 100%, 39%);
+        --secondary-warning-1200: hsl(54, 100%, 30%);
+        --secondary-warning-1300: hsl(54, 100%, 19%);
+        --secondary-warning-1400: hsl(54, 100%, 10%);
+
+        /* secondary error */
+        --secondary-error-600: hsl(0, 70%, 89%);
+        --secondary-error-700: hsl(0, 70%, 80%);
+        --secondary-error-800: hsl(0, 70%, 70%);
+        --secondary-error-900: hsl(0, 70%, 60%);
+        --secondary-error-1000: hsl(0, 80%, 50%);
+        --secondary-error-1100: hsl(0, 80%, 39%);
+        --secondary-error-1200: hsl(0, 80%, 30%);
+        --secondary-error-1300: hsl(0, 80%, 19%);
+        --secondary-error-1400: hsl(0, 80%, 10%);
+
+        /* secondary success */
+        --secondary-success-600: hsl(98, 40%, 88%);
+        --secondary-success-700: hsl(98, 40%, 80%);
+        --secondary-success-800: hsl(98, 40%, 70%);
+        --secondary-success-900: hsl(98, 40%, 60%);
+        --secondary-success-1000: hsl(98, 83%, 36%);
+        --secondary-success-1100: hsl(98, 83%, 32%);
+        --secondary-success-1200: hsl(98, 83%, 24%);
+        --secondary-success-1300: hsl(98, 83%, 16%);
+        --secondary-success-1400: hsl(98, 83%, 10%);
+}
+
+.air {
+    --primary: rgba(1, 56, 95, 1);
+    --chart-1: rgba(204, 215, 223, 1);
+    --chart-2: hsl(173 58% 39%);
+    --chart-3: hsl(197 37% 24%);
+    --chart-4: hsl(43 74% 66%);
+    --chart-5: hsl(27 87% 67%);
+    --overlay: rgba(1, 56, 95, 0.80);
+}
+
+.energy {
+    --primary: rgba(245, 159, 0, 1);
+    --chart-1: rgba(255, 248, 212, 1);
+    --chart-2: hsl(173 58% 39%);
+    --chart-3: hsl(197 37% 24%);
+    --chart-4: hsl(43 74% 66%);
+    --chart-5: hsl(27 87% 67%);
+    --overlay: rgba(249, 197, 102, 0.8);
+}
+
+.water {
+    --primary: rgba(40, 122, 176, 1);
+    --chart-1: rgba(212, 228, 239, 1);
+    --chart-2: hsl(173 58% 39%);
+    --chart-3: hsl(197 37% 24%);
+    --chart-4: hsl(43 74% 66%);
+    --chart-5: hsl(27 87% 67%);
+    --overlay: rgba(126, 175, 208, 0.8);
+}
+
+.residues {
+    --primary: rgba(102, 168, 15, 1);
+    --chart-1: rgba(255, 248, 212, 1);
+    --chart-2: hsl(173 58% 39%);
+    --chart-3: hsl(197 37% 24%);
+    --chart-4: hsl(43 74% 66%);
+    --chart-5: hsl(27 87% 67%);
+    --overlay: rgba(133, 185, 63, 0.8);
+}
+
+.transport {
+    --primary: rgba(11, 114, 133, 1);
+    --chart-1: rgba(206, 227, 231, 1);
+    --chart-2: hsl(173 58% 39%);
+    --chart-3: hsl(197 37% 24%);
+    --chart-4: hsl(43 74% 66%);
+    --chart-5: hsl(27 87% 67%);
+    --overlay: rgba(60, 142, 157, 0.8);
+}
+
+.experience {
+    --primary: rgba(224, 49, 49, 1);
+    --chart-1: rgba(249, 214, 214, 1);
+    --chart-2: hsl(173 58% 39%);
+    --chart-3: hsl(197 37% 24%);
+    --chart-4: hsl(43 74% 66%);
+    --chart-5: hsl(27 87% 67%);
+    --overlay: rgba(230, 90, 90, 0.8);
+}
+
+.default {
+    --primary: var(--citric-green-1000);
+    --chart-1: rgba(211, 211, 211, 1);
+    --chart-2: hsl(173 58% 39%);
+    --chart-3: hsl(197 37% 24%);
+    --chart-4: hsl(43 74% 66%);
+    --chart-5: hsl(27 87% 67%);
+    --overlay: rgba(35, 35, 35, 0.80);
+    --input: hsl(0 0% 89.8%);
+    --background: hsl(0 0% 100%);
+    --foreground: hsl(0 0% 3.9%);
+    --card: var(--snow-white-1000);
+    --chart-1: hsl(0 0% 83%);
+    --card-foreground: hsl(0 0% 3.9%);
+    --popover: hsl(0 0% 100%);
+    --popover-foreground: hsl(0 0% 3.9%);
+    --primary: hsl(86, 84%, 36%);
+    --primary-foreground: hsl(0 0% 98%);
+    --secondary: hsl(0 0% 96.1%);
+    --secondary-foreground: hsl(0 0% 9%);
+    --muted: hsl(0 0% 96.1%);
+    --muted-foreground: hsl(0 0% 45.1%);
+    --accent: hsl(0 0% 96.1%);
+    --accent-foreground: hsl(0 0% 9%);
+    --destructive: hsl(0 84.2% 60.2%);
+    --destructive-foreground: hsl(0 0% 98%);
+    --border: hsl(0 0% 89.8%);
+    --input: hsl(0 0% 89.8%);
+    --input-background: var(--gray-000);
+    --input-border: var(--gray-blue-1000);
+    
+    --ring: hsl(0 0% 3.9%);
+    --chart-2: hsl(173 58% 39%);
+    --chart-3: hsl(197 37% 24%);
+    --chart-4: hsl(43 74% 66%);
+    --chart-5: hsl(27 87% 67%);
+    --radius: 0.5rem;
+    --overlay: rgba(35, 35, 35, 0.80);
+}
+
+.dark {
+    --background: hsl(0 0% 3.9%);
+    --foreground: hsl(0 0% 98%);
+    --card: hsl(0 0% 3.9%);
+    --card-foreground: hsl(0 0% 98%);
+    --popover: hsl(0 0% 3.9%);
+    --popover-foreground: hsl(0 0% 98%);
+    --primary: hsl(0 0% 98%);
+    --primary-foreground: hsl(0 0% 9%);
+    --secondary: hsl(0 0% 14.9%);
+    --secondary-foreground: hsl(0 0% 98%);
+    --muted: hsl(0 0% 14.9%);
+    --muted-foreground: hsl(0 0% 63.9%);
+    --accent: hsl(0 0% 14.9%);
+    --accent-foreground: hsl(0 0% 98%);
+    --destructive: hsl(0 62.8% 30.6%);
+    --destructive-foreground: hsl(0 0% 98%);
+    --border: hsl(0 0% 14.9%);
+    --input: hsl(0 0% 14.9%);
+    --ring: hsl(0 0% 83.1%);
+    --chart-1: hsl(220 70% 50%);
+    --chart-2: hsl(160 60% 45%);
+    --chart-3: hsl(30 80% 55%);
+    --chart-4: hsl(280 65% 60%);
+    --chart-5: hsl(340 75% 55%);
+}
+}
+
+.recharts-legend-wrapper {
+    height: 100% !important;
+    padding-left: 24px;
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+#rdp-root {
+    border: none;
+}
